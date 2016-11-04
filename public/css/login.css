@@ -1,0 +1,28 @@
+/*main登录部分*/
+.main-infro{width:790px;margin:0 auto;margin-top:20px;}
+.infro-left{width:350px;}
+.content-landing{width:320px;height:210px;margin:30px 20px 5px 20px;}
+
+.content-landing li{width:320px;height:60px;position:relative;margin:10px 0;}
+.normal{width:60px;height: 20px;color:#333333;text-align: right;margin-top: 12px;padding-right:3px;}
+.normal-input{width:210px;height:12px;padding:12px 0 12px 5px;border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px;border:1px solid #ddd;}
+.content-landing li strong{width:23px;height:23px;display:block;background:url(../images/allbgs.png) no-repeat;margin: 10px 0 0 5px;}
+.content-landing li .error{background-position:-10px -1px;}
+.content-landing li .ok{background-position:-36px -1px;}
+.content-landing li .tip{width: 150px;height: 16px;overflow: hidden;position: absolute;top: 48px;left: 76px;color:#666;}
+.content-landing li.logintime{height:20px;line-height:20px;text-align:left;margin:0;color:#707070;}
+.content-landing li.logintime input{margin:4px 3px 0 64px;}
+.content-landing li.logintime a{display:inline-block;padding-left:60px;color:#a0a0a0;}
+.content-landing li.logintime a:hover,.content-landing li.logintime a:active{color:#ff464e;}
+.content-landing li .sub{width:215px;height:36px;cursor:pointer;font-size:16px;color:#fff;background: #FF4251;border:1px solid #FF4251;border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px;}
+.sub:hover,.sub:active{opacity:0.9;filter:alpha(opacity:90);}
+.content-landing li.login-botn{height:40px;margin:10px 0;} 
+
+.qq-wx{height:25px;padding-left:80px;position: relative;margin-top: 10px;}
+.qq-wx span{font-size:14px;font-weight:bold;margin-right:10px;padding-top:3px;}
+.qq-wx a{display:inline-block;height:22px;width:22px;margin-right:2px;background:url(../images/allbgs.png) no-repeat;}
+a.qq{background-position:-8px -25px;}
+a.weixin{background-position:-34px -25px;}
+a.weibo{background-position:-58px -25px;}
+
+.infro-right{width:395px;padding-top:55px;}

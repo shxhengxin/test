@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.7" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd"> 
+ <name>yar</name>
+ <channel>pecl.php.net</channel>
+ <summary>Light, concurrent RPC framework</summary>
+ <description>Yar(Yet another RPC framework) is a light, concurrent RPC framework, supports multi package protocols (json, msgpack)</description>
+ <lead>
+  <name>Xinchen Hui</name>
+  <user>laruence</user>
+  <email>laruence@php.net</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Zhenyu Zhang</name>
+  <user>zhangzhenyu</user>
+  <email>zhangzhenyu@php.net</email>
+  <active>yes</active>
+ </developer>
+ <date>2016-07-02</date>
+ <time>14:30:00</time>
+ <version>
+  <release>2.0.1</release>
+  <api>2.0.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license">PHP</license>
+ <notes>
+  - Fixed bug in doc comment displaying
+  - PHP-7.1 compatible fixs
+ </notes>
+ <contents> 
+  <dir name="/"> 
+   <file name="config.m4"  role="src" />
+   <file name="config.w32" role="src" />
+   <file name="CREDITS" role="doc" />
+   <file name="LICENSE" role="doc" />
+   <file name="php_yar.h" role="src" />
+   <file name="yar.c" role="src" />
+   <file name="yar_server.h" role="src" />
+   <file name="yar_server.c" role="src" />
+   <file name="yar_client.h" role="src" />
+   <file name="yar_client.c" role="src" />
+   <file name="yar_request.h" role="src" />
+   <file name="yar_request.c" role="src" />
+   <file name="yar_response.h" role="src" />
+   <file name="yar_response.c" role="src" />
+   <file name="yar_exception.h" role="src" />
+   <file name="yar_exception.c" role="src" />
+   <file name="yar_transport.h" role="src" />
+   <file name="yar_transport.c" role="src" />
+   <file name="yar_protocol.h" role="src" />
+   <file name="yar_protocol.c" role="src" />
+   <file name="yar_packager.h" role="src" />
+   <file name="yar_packager.c" role="src" />
+   <dir name="transports">
+    <file name="curl.c" role="src" />
+    <file name="socket.c" role="src" />
+   </dir>
+   <dir name="packagers">
+    <file name="php.c" role="src" />
+    <file name="json.c" role="src" />
+    <file name="msgpack.c" role="src" />
+   </dir>
+   <dir name="tests">
+    <file name="001.phpt" role="test" />
+    <file name="002.phpt" role="test" />
+    <file name="003.phpt" role="test" />
+    <file name="004.phpt" role="test" />
+    <file name="005.phpt" role="test" />
+    <file name="006.phpt" role="test" />
+    <file name="007.phpt" role="test" />
+    <file name="008.phpt" role="test" />
+    <file name="009.phpt" role="test" />
+    <file name="010.phpt" role="test" />
+    <file name="011.phpt" role="test" />
+    <file name="012.phpt" role="test" />
+    <file name="013.phpt" role="test" />
+    <file name="014.phpt" role="test" />
+    <file name="015.phpt" role="test" />
+    <file name="016.phpt" role="test" />
+    <file name="017.phpt" role="test" />
+    <file name="018.phpt" role="test" />
+    <file name="yar.inc" role="test" />
+    <dir name="htdocs">
+     <file name="index.php" role="test"/>
+     <file name="auth.php" role="test"/>
+     <file name="302.php" role="test"/>
+     <file name="rest.php" role="test"/>
+    </dir>
+   </dir>
+   <dir name="tools">
+    <file name="yar_debug.inc" role="php"/>
+    <file name="yar_debug.php" role="script"/>
+   </dir>
+  </dir> 
+ </contents> 
+ <dependencies> 
+  <required> 
+   <php> 
+    <min>7.0.0</min> 
+   </php> 
+   <pearinstaller> 
+    <min>1.4.0</min> 
+   </pearinstaller> 
+  </required> 
+  <optional>
+   <extension><name>msgpack</name></extension>
+  </optional>
+ </dependencies> 
+ <providesextension>yar</providesextension>
+ <extsrcrelease>
+  <configureoption 
+   name="enable-msgpack"
+   prompt="Enable Msgpack Supports"
+   default="no" />
+ </extsrcrelease>
+ <changelog> 
+  <release> 
+   <date>2016-07-02</date> 
+   <version> 
+    <release>2.0.1</release> 
+    <api>2.0.1</api> 
+   </version> 
+   <stability> 
+    <release>stable</release> 
+    <api>stable</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed bug in doc comment displaying
+    - PHP-7.1 compatible fixs
+   </notes> 
+  </release> 
+
+  <release> 
+   <date>2015-10-27</date> 
+   <version> 
+    <release>2.0.0</release> 
+    <api>2.0.0</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Release Yar for PHP7
+   </notes> 
+  </release> 
+  <release> 
+   <date>2015-10-27</date> 
+   <version> 
+    <release>2.0.0</release> 
+    <api>2.0.0</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Release Yar for PHP7
+   </notes> 
+  </release> 
+  <release> 
+   <date>2014-10-22</date> 
+   <version> 
+    <release>1.2.4</release> 
+    <api>1.2.4</api> 
+   </version> 
+   <stability> 
+    <release>stable</release> 
+    <api>stable</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed bug "can not get fd from curl instance" on MacOS and Windows
+    - Add Yar_Concurrent_Client::reset to meet #26
+    - Fixed build with libcurl-7.12
+    - Enable msgpack prompt in package.xml
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-12-31</date> 
+   <version> 
+    <release>1.2.3</release> 
+    <api>1.2.3</api> 
+   </version> 
+   <stability> 
+    <release>stable</release> 
+    <api>stable</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed windows building 
+    - Fixed segfault NULL pointer dereference
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-12-31</date> 
+   <version> 
+    <release>1.2.2</release> 
+    <api>1.2.2</api> 
+   </version> 
+   <stability> 
+    <release>stable</release> 
+    <api>stable</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed Issue #9 (Yar Server will response in the same package as client packaged)
+    - Fixed Bug (Unterminatable select)
+    - Add debug tool (A PHP implemented Yar debug client)
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-11-19</date> 
+   <version> 
+    <release>1.2.1</release> 
+    <api>1.2.1</api> 
+   </version> 
+   <stability> 
+    <release>stable</release> 
+    <api>stable</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - (NOTE) yar.connect_timeout and yar.timeout are ms now
+    - Fixed bug(a typo) by zengohm at gmail.com
+    - Fixed bug that curl_multi_fdset may return -1
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-03-03</date> 
+   <version> 
+    <release>1.2.0</release> 
+    <api>1.2.0</api> 
+   </version> 
+   <stability> 
+    <release>stable</release> 
+    <api>stable</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Add ability to change the request/response Content-type
+    - Add Version info in phpinfo outputing
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-03-03</date> 
+   <version> 
+    <release>1.1.2</release> 
+    <api>1.1.2</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Fixed bug uninitialized value in socket transporter
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-02-19</date> 
+   <version> 
+    <release>1.1.1</release> 
+    <api>1.1.1</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Add missed socket.c into package
+   </notes> 
+  </release> 
+  <release> 
+   <date>2013-02-18</date> 
+   <version> 
+    <release>1.1.0</release> 
+    <api>1.1.0</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - Support TCP/Unix RPC
+    - Support perisitent link (HTTP/TCP/Unix)
+    - Reimplements http RPC for profermance
+    - Fix some memleaks
+   </notes> 
+  </release> 
+  <release> 
+   <date>2012-10-12</date> 
+   <version> 
+    <release>1.0.0</release> 
+    <api>1.0.0</api> 
+   </version> 
+   <stability> 
+    <release>beta</release> 
+    <api>beta</api> 
+   </stability> 
+   <license uri="http://www.php.net/license">PHP License</license> 
+   <notes>
+    - First release
+   </notes> 
+  </release> 
+ </changelog> 
+</package> 
+<!--
+vim:et:ts=1:sw=1
+--> 
